@@ -19,15 +19,17 @@
             </item>
 
             <item
-                android:top="2dp"
-                android:left="2dp"
-                android:right="2dp"
-                android:bottom="2dp">
+                android:top="1dp"
+                android:left="1dp"
+                android:right="1dp"
+                android:bottom="1dp">
                 <shape
                     android:shape="rectangle">
 
-                    <solid
-                        android:color="#ffffff"/>
+                    <gradient
+                        android:startColor="#EF8198"
+                        android:endColor="#FFE87A"
+                        android:angle="270"/>
 
                 </shape>
             </item>
