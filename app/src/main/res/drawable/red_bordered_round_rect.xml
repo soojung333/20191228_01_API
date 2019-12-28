@@ -13,6 +13,8 @@
 
                     <solid
                         android:color="#ff0000"/>
+                    <corners
+                        android:radius="8dp"/>
 
                 </shape>
 
@@ -26,10 +28,12 @@
                 <shape
                     android:shape="rectangle">
 
-                    <gradient
-                        android:startColor="#EF8198"
-                        android:endColor="#FFE87A"
-                        android:angle="270"/>
+
+                    <solid
+                        android:color="#ffffff"/>
+
+                    <corners
+                        android:radius="7dp"/>
 
                 </shape>
             </item>
@@ -40,13 +44,37 @@
     <item
         android:state_pressed="true">
 
+
         <layer-list>
+
             <item>
+                <shape>
+
+                    android:shape="rectangle"/>
+
+                    <solid
+                        android:color="#ff0000"/>
+                    <corners
+                        android:radius="8dp"/>
+
+                </shape>
+
+            </item>
+
+            <item
+                android:top="1dp"
+                android:left="1dp"
+                android:right="1dp"
+                android:bottom="1dp">
                 <shape
                     android:shape="rectangle">
 
+
                     <solid
-                        android:color="#000000"/>
+                        android:color="#dddddd"/>
+
+                    <corners
+                        android:radius="7dp"/>
 
                 </shape>
             </item>
