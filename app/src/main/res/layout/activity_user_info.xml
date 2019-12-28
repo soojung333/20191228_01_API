@@ -11,12 +11,14 @@
 
 
     <TextView
+        android:id="@+id/userIdTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:text="아이디 자리"/>
 
     <TextView
+        android:id="@+id/userNameTxt"
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,6 +26,7 @@
         android:text="이름 자리"/>
 
     <TextView
+        android:id="@+id/userPhoneTxt"
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,6 +34,7 @@
         android:text="폰번 자리"/>
 
     <TextView
+        android:id="@+id/userMemoTxt"
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
