@@ -6,6 +6,7 @@ import android.util.Log
 import android.widget.Toast
 import com.soojung.a20191228_01_api.utils.ConnectServer
 import com.soojung.a20191228_01_api.utils.ContextUtil
+import com.soojung.a20191228_01_api.utils.MainActivity
 import kotlinx.android.synthetic.main.activity_login.*
 import org.json.JSONObject
 
@@ -80,7 +81,7 @@ class LoginActivity : BaseActivity() {
 //                        받아온 토큰을 내 폰에 반영구 저장
                         ContextUtil.setUserToken(mContext, token)
 
-                        val intent = Intent(mContext, MyProfileActivity::class.java)
+                        val intent = Intent(mContext, MainActivity::class.java)
                         startActivity(intent)
 
                         finish()

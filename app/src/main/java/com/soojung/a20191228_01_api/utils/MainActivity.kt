@@ -3,14 +3,17 @@ package com.soojung.a20191228_01_api.utils
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.soojung.a20191214_01_listviewpractice02.adapters.UserAdapter
 import com.soojung.a20191228_01_api.BaseActivity
 import com.soojung.a20191228_01_api.R
 import com.soojung.a20191228_01_api.data.User
+import kotlinx.android.synthetic.main.activity_main.*
 import org.json.JSONObject
 
 class MainActivity : BaseActivity() {
 
     val userList = ArrayList<User>()
+    var mUserAdapter:UserAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +27,8 @@ class MainActivity : BaseActivity() {
     }
 
     override fun setValues() {
+        mUserAdapter = UserAdapter(mContext, R.layout.user_list_item, userList)
+        userListView.adapter = mUserAdapter
 
     }
 
@@ -46,6 +51,9 @@ class MainActivity : BaseActivity() {
                            val userDataObject = User.getUserFromJson(userJson)
                            userList.add(userDataObject)
                        }
+
+                       mUserAdapter?.notifyDataSetChanged()
+
 
                    }
                    else {
