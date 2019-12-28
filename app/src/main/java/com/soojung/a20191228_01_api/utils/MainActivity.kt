@@ -10,7 +10,7 @@ import org.json.JSONObject
 
 class MainActivity : BaseActivity() {
 
-    val userList = ArrayList<User>
+    val userList = ArrayList<User>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
