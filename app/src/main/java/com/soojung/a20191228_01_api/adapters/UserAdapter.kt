@@ -26,6 +26,12 @@ class UserAdapter(context:Context, resId:Int, list:ArrayList<User>)
 
         val data = mList.get(position)
 
+        val nameTxt = row.findViewById<TextView>(R.id.nameTxt)
+        val phoneNumeTxt = row.findViewById<TextView>(R.id.phoneNumTxt)
+
+        nameTxt.text = data.name
+        phoneNumeTxt.text = "(${data.phoneNum})"
+
 
         return row
 
